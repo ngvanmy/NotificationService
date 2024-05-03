@@ -12,8 +12,4 @@
     <ProjectReference Include="..\EasyAbp.NotificationService.Domain\EasyAbp.NotificationService.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="EasyAbp\NotificationService" />
-  </ItemGroup>
-
 </Project>

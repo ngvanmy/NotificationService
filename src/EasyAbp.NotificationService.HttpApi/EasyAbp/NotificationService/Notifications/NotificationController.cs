@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp;
 using Volo.Abp.Application.Dtos;
+using System.Collections.Generic;
 
 namespace EasyAbp.NotificationService.Notifications
 {
@@ -51,5 +52,10 @@ namespace EasyAbp.NotificationService.Notifications
         {
             return _service.GetListAsync(input);
         }
-    }
+		[HttpGet("getall")]
+		public async Task<IEnumerable<NotificationDto>> GetAll()
+		{
+            return await _service.GetAll();
+		}
+	}
 }
